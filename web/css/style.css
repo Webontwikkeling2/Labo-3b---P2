@@ -1,0 +1,147 @@
+html{
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+}
+/*header*/
+header{
+    width: 100%;
+}
+header > h1{
+    float: left;
+    margin-left: 7rem;
+}
+nav{
+    text-align: right;
+    margin-right: 10rem;
+    margin-top: 2.5rem;
+}
+li {
+    display: inline;
+    padding-right: 0.5rem;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.picture-header{
+    margin-top: 2rem;
+    background-image: url("../img/header.jpg");
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*main*/
+main{
+    width: 100%;
+    padding-top: 4rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+section > h2, section > p{
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+section > table{
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+}
+table td{
+    width: 15rem;
+}
+table > thead td{
+    border: solid 1px black;
+    background-color: #adadad;
+}
+.totaal{
+    border: solid 1px black;
+    background-color: #adadad;
+}
+
+/*form*/
+form{
+    text-align: right;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+form > label{
+    display: block;
+}
+form > input{
+    display: block;
+}
+/*button*/
+.btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+}
+.btn:focus,
+.btn:active:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus, .btn-active {
+    color: #333;
+    text-decoration: none;
+}
+.btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-default:focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
+}
+.btn-default:hover, .btn-active {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn-default:active {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+/*footer*/
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #adadad;
+    height: 5vh;
+}
+
+footer > p{
+    display: flex;
+    justify-content: center;
+}
