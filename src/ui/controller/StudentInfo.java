@@ -20,6 +20,7 @@ public class StudentInfo extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String RequestedVoornaam = request.getParameter("voornaam");
         String RequestedAchternaam = request.getParameter("naam");
+        String destination;
         boolean found = false;
 
         StudentDB Databank = new StudentDB();
@@ -37,11 +38,12 @@ public class StudentInfo extends HttpServlet {
         }
 
         if (found){
-            RequestDispatcher view = request.getRequestDispatcher("gevonden.jsp");
-            view.forward(request, response);
+            destination = "gevonden.jsp";
         }else{
-            RequestDispatcher view = request.getRequestDispatcher("nietgevonden.jsp");
-            view.forward(request, response);
+            destination = "nietgevonden.jsp";
         }
+
+        RequestDispatcher view = request.getRequestDispatcher(destination);
+        view.forward(request, response);
     }
 }
